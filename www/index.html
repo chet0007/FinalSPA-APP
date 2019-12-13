@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; 
+            media-src *; img-src 'self' data: content:;"> -->
+            <meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline' 'self' https://api.themoviedb.org/3/ https://github.com/chet0007/;
+            img-src 'self' https://image.tmdb.org;
+            child-src 'none'; 
+            style-src 'self' https://fonts.googleapis.com/;
+            font-src 'self' https://fonts.gstatic.com/;
+            ">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Hello World</title> 
+
+    </head>
+    <body>
+        <main>
+    
+        <div id="search" class="page active">
+            <h1>Search name</h1> 
+            <div class="container">
+                <input type="search" name="search" id="search_input" placeholder="Enter Name"/>
+                <button id="btnClick" data-href="actors">&#128269</button>
+            </div> 
+            
+        </div>
+    
+        <div id="actors" class="page">
+                <h1>Actors :</h1>
+                <ul class="list_actors" id="list_actors"></ul>
+                <div class="fab" data-href="search"><img src="./img/home.svg" alt="home"></div>  
+        </div>
+    
+        <div id="movies" class="page">
+                <div id="actor">
+                    <h1>   </h1>
+                    <img src="" alt="profile">
+                </div>        
+                <h2>Known for:</h2>
+                <ul class="list_movies" id="list_movies"></ul>
+                <div class="fab" data-href="search"><img src="./img/home.svg" alt="home"></div>  
+            </div>/home.svg" alt="home"></div>
+        </div>
+    
+        <div id="movie_detail" class="page">
+                <h1>   </h1>
+                <img class="poster" alt="moviePoster">
+                <p class="year">Release year: <span></span></p>
+                <p class="genre">Genre(s): <span></span></p>
+                <h2>Casting List :</h2>
+                <ul class="list_cast" id="list_cast"></ul>
+                <div class="fab" data-href="search"><img src="./img/home.svg" alt="home"></div>  
+            </div>/home.svg" alt="home"></div>      
+        </div>
+    
+        </main>
+    
+        <script src="js/index.js" ></script>
+    </body>
+</html>
